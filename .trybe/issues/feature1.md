@@ -1,1 +1,0 @@
-Ao iniciar a aplicação a mesma, quebra e não mostra nenhum componente na tela.

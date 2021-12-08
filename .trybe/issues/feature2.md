@@ -1,1 +1,0 @@
-Ao inserir um termo de pesquisa no input do header, o mesmo não funciona e parece que não é unicamente renderizado ao acessar sua url.
