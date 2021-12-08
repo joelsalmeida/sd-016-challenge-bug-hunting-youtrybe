@@ -1,10 +1,12 @@
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
-1. Clone o repositório
+1. Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
 
-- `git clone git@github.com:tryber/challenge-bug-hunting-squad-x.git`.
+Após feito o fork, clone o repositório criado para o seu computador.
 
-1. Instale as dependências e inicialize o projeto
+- `git clone git@github.com:tryber/sd-016-challenge-bug-hunting-youtrybe.git`.
+
+2. Instale as dependências e inicialize o projeto
 
 - Instale as dependências:
   - `npm install`
@@ -41,7 +43,7 @@
 
 6. Crie um novo `Pull Request` _(PR)_
 
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/challenge-bug-hunting-squad-x.git./pulls)
+- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-016-challenge-bug-hunting-youtrybe.git./pulls)
 - Clique no botão verde _"New pull request"_
 - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
 - Clique no botão verde _"Create pull request"_

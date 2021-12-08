@@ -19,7 +19,7 @@ Sendo assim, vocês estão encarregados desta demanda de refatoração geral da 
 ## 🗒 Passo a passo para Desenvolvimento
 
 1. [Configurando](/YoutubeAPIAuth.md) sua `Youtube API KEY`
-2. [Instruções](/FluxoDesenvolvimento.md) para entregar seu desáfio!
+2. [Instruções](/FluxoDesenvolvimento.md) para entregar seu desafio!
 3. [Requisitos](/RequisitosBugs.md) a serem corrigidos!
 
 #### Prontos? Vamos caçar os bugs! 👾 🔫
