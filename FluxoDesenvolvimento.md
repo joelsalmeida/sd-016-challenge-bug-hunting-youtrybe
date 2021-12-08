@@ -4,7 +4,7 @@
 
 Após feito o fork, clone o repositório criado para o seu computador.
 
-- `git clone git@github.com:tryber/sd-016-challenge-bug-hunting-youtrybe.git`.
+- `git clone git@github.com:username/sd-016-challenge-bug-hunting-youtrybe.git`.
 
 2. Instale as dependências e inicialize o projeto
 
