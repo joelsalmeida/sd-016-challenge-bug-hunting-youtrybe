@@ -8,9 +8,10 @@ export const searchVideos = (searchText) => {
     resolve(
       fetch(URL)
         .then((data) => data)
-        .catch(error => reject(error))
+        .then((data) => data.json())
+        .catch((error) => reject(error))
     );
-  })
+  });
 };
 
 export const getVideoInfo = (videoId) => {
@@ -21,9 +22,9 @@ export const getVideoInfo = (videoId) => {
     resolve(
       fetch(URL)
         .then((data) => data)
-        .catch(error => reject(error))
+        .catch((error) => reject(error))
     );
-  })
+  });
 };
 
 export const getVideoComments = (videoId) => {
@@ -34,7 +35,7 @@ export const getVideoComments = (videoId) => {
     resolve(
       fetch(URL)
         .then((data) => data)
-        .catch(error => reject(error))
+        .catch((error) => reject(error))
     );
-  })
+  });
 };
