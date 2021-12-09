@@ -27,6 +27,18 @@ class SearchResult extends Component {
       .catch((error) => this.setState({ error: error }));
   }
 
+  componentDidUpdate() {
+    const {
+      params: { searchParam },
+    } = this.props.match;
+
+    searchVideos(searchParam)
+      .then((data) => {
+        this.setState({ data: data.items });
+      })
+      .catch((error) => this.setState({ error: error }));
+  }
+
   render() {
     const { data } = this.state;
 
