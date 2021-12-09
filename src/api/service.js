@@ -22,6 +22,7 @@ export const getVideoInfo = (videoId) => {
     resolve(
       fetch(URL)
         .then((data) => data)
+        .then((data) => data.json())
         .catch((error) => reject(error))
     );
   });
@@ -35,6 +36,7 @@ export const getVideoComments = (videoId) => {
     resolve(
       fetch(URL)
         .then((data) => data)
+        .then((data) => data.json())
         .catch((error) => reject(error))
     );
   });

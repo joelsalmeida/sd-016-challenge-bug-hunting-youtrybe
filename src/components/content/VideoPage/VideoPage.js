@@ -17,30 +17,34 @@ class VideoPage extends Component {
       videoComments: null,
     };
 
-    this.handleSelectedVideo = this.handleSelectedVideo.bind(this)
+    this.handleSelectedVideo = this.handleSelectedVideo.bind(this);
   }
 
   componentDidMount() {
-    getVideoInfo(this.state.videoId)
-      .then((data) => this.setState({ videoInfo: data.items[0] }));
+    getVideoInfo(this.state.videoId).then((data) =>
+      this.setState({ videoInfo: data.items[0] })
+    );
 
-    getVideoComments(this.state.videoId)
-      .then((data) => this.setState({ videoComments: data.items }));
+    getVideoComments(this.state.videoId).then((data) =>
+      this.setState({ videoComments: data.items })
+    );
   }
 
   handleSelectedVideo(videoId) {
-    this.setState({ videoId: videoId })
-    getVideoInfo(this.state.videoId)
-      .then((data) => this.setState({ videoInfo: data.items[0] }));
+    this.setState({ videoId: videoId });
 
-    getVideoComments(this.state.videoId)
-      .then((data) => this.setState({ videoComments: data.items }));
+    getVideoInfo(this.state.videoId).then((data) =>
+      this.setState({ videoInfo: data.items[0] })
+    );
+
+    getVideoComments(this.state.videoId).then((data) =>
+      this.setState({ videoComments: data.items })
+    );
     this.props.history.push(`/watch/${videoId}`);
   }
 
   render() {
-    if (!this.state.videoInfo || !this.state.videoComments)
-      return <main></main>;
+    if (!this.state.videoInfo || !this.state.videoComments) return <main></main>;
 
     return (
       <main>
@@ -61,7 +65,10 @@ class VideoPage extends Component {
           />
         </section>
         <section className="sidebar">
-          <VideoSideBar relatedVideos={this.state.relatedVideos} handleSelectedVideo={this.handleSelectedVideo} />
+          <VideoSideBar
+            relatedVideos={this.state.relatedVideos}
+            handleSelectedVideo={this.handleSelectedVideo}
+          />
         </section>
       </main>
     );
