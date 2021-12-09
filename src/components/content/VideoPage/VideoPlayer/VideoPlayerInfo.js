@@ -15,33 +15,33 @@ class VideoPlayerInfo extends Component {
         </span>
           <span className="right-menu">
             <div className="thumb-wrapper">
-              <a className="thumb-up-btn">
+              <button className="thumb-up-btn">
                 <i className="material-icons">thumb_up</i>
                 <span className="thumbs-count">
                   {statisticsInfo.likeCount}
                 </span>
-              </a>
+              </button>
 
-              <a className="thumb-down-btn">
+              <button className="thumb-down-btn">
                 <i className="material-icons">thumb_down</i>
                 <span className="thumbs-count">
                   {statisticsInfo.dislikeCount}
                 </span>
-              </a>
+              </button>
             </div>
 
-            <a className="share-btn">
+            <button className="share-btn">
               <i className="material-icons">reply</i>
               <span>SHARE</span>
-            </a>
+            </button>
 
-            <a className="save-btn">
+            <button className="save-btn">
               <i className="material-icons">playlist_add</i>
               <span>SAVE</span>
-            </a>
-            <a className="options-btn">
+            </button>
+            <button className="options-btn">
               <i className="material-icons">more_horiz</i>
-            </a>
+            </button>
           </span>
         </div>
       </div>
