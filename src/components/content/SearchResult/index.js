@@ -15,7 +15,7 @@ class SearchResult extends Component {
     };
   }
 
-  componentDidMount() {
+  showResearchedVideos = () => {
     const {
       params: { searchParam },
     } = this.props.match;
@@ -25,18 +25,18 @@ class SearchResult extends Component {
         this.setState({ data: data.items });
       })
       .catch((error) => this.setState({ error: error }));
+  };
+
+  componentDidMount() {
+    this.showResearchedVideos();
   }
 
-  componentDidUpdate() {
-    const {
-      params: { searchParam },
-    } = this.props.match;
+  componentDidUpdate(prevProps) {
+    const locationChanged = this.props.location !== prevProps.location;
 
-    searchVideos(searchParam)
-      .then((data) => {
-        this.setState({ data: data.items });
-      })
-      .catch((error) => this.setState({ error: error }));
+    if (locationChanged) {
+      this.showResearchedVideos();
+    }
   }
 
   render() {
