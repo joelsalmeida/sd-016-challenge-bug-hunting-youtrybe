@@ -22,7 +22,7 @@ class SearchResult extends Component {
 
     searchVideos(searchParam)
       .then((data) => {
-        this.setState({ data: data.items });
+        this.setState({ data: data.items.filter((data) => data.id.kind === 'youtube#video') });
       })
       .catch((error) => this.setState({ error: error }));
   };
